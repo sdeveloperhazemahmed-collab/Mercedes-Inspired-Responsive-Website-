@@ -1,0 +1,128 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-color);
+}
+
+.section-one, .section-two {
+    display: flex;
+    padding: 0px 50px;
+}
+
+.section-two {
+    flex-direction: row-reverse;
+}
+
+.section-one h1, .section-two h1 {
+    color: var(--sec-color);
+    font-size: 130px;
+    letter-spacing: var(--Lspacing);
+    word-spacing: 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.section-two h1 {
+    text-align: right;
+    position: relative;
+    top: 250px;
+}
+
+.gallery-img-section1, .gallery-img-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.gallery-img-section1 {
+    top: 200px;
+    right: 120px;
+    z-index: 0;
+}
+
+.gallery-img-section2 {
+    left: 120px;
+}
+
+.gallery-img-section1 img, .gallery-img-section2 img {
+    width: 130%;
+}
+
+.gallery-img-section1 p, .gallery-img-section2 p {
+    color: var(--sec-color);
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* .section-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+/* .section-three h1 {
+    color: white;
+    font-size: 172px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -10px;
+    text-align: center;
+    color: transparent;
+    position: absolute;
+    top: 3600px;
+    left: 220px;
+} */
+
+/* .section-three img {
+    width: calc(100% / 2);
+} */
+
+@media (max-width: 426px) {
+    .gallery {
+        height: 1400px;
+    }
+
+    .section-one, .section-two {
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    .section-two {
+        flex-direction: column-reverse;
+    }
+
+    .section-one h1 {
+        font-size: 55px;
+        margin-bottom: -150px;
+    }
+
+    .section-two h1 {
+        text-align: left;
+        font-size: 55px;
+        margin-top: -200px;
+    }
+
+    .gallery-img-section1 {
+        right: 0px;
+    }
+
+    .gallery-img-section2 {
+        left: 0;
+    }
+    
+    .gallery-img-section1 p, .gallery-img-section2 p {
+        font-size: 24px;
+    }
+
+    .gallery-img-section1 img, .gallery-img-section2 img {
+        width: 100%;
+    }
+}

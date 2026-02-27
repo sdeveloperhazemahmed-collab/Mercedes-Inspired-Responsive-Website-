@@ -1,0 +1,119 @@
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buy h1 {
+    align-self: flex-start;
+    color: var(--sec-color);
+    padding: 0 35px;
+    font-size: 77px;
+    font-weight: lighter;
+}
+
+.buy-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.buy-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    background-color: var(--sec-color);
+}
+
+.new__buy-section-container {
+    position: relative;
+}
+
+.buy .buy-section-container .new-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 15px;
+    position: absolute;
+    top: 11px;
+    right: 431px;
+    z-index: 15;
+}
+
+.buy .buy-section-container a {
+    font-size: 40px;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.3s;
+    &:hover {
+        font-size: 44px;
+        padding: 2px;
+    }
+}
+
+.buy .buy-section-container p, .buy .buy-section-container p #clilkHere-link {
+    font-size: 16px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.buy .buy-section-container p #clilkHere-link {
+    text-decoration: underline;
+    padding: 0;
+}
+
+.buy .buy-section-container img {
+    width: 100%;
+}
+
+@media (max-width: 426px) {
+    .buy h1 {
+        font-size: 70px;
+    }
+
+    .buy-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .buy-section-container {
+        height: fit-content;
+    }
+
+    .buy .buy-section-container a {
+        font-size: 32px;
+        padding: 20px 0;
+
+        &:hover {
+            font-size: 35px;
+            padding: 18px 0;
+        }
+    }
+
+    .buy .buy-section-container p, .buy .buy-section-container p #clilkHere-link {
+        padding: auto 35px;
+        font-size: 18px;
+    }
+
+    .buy .buy-section-container .new-option {
+        position: absolute;
+        top: 0;
+        right: 340px;
+    }
+}

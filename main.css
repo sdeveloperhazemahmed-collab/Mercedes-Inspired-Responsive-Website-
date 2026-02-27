@@ -1,0 +1,18 @@
+@import url('/base/reset.css');
+@import url('/base/variables.css');
+
+@import url('/blocks/header/navbar.css');
+
+@import url('/blocks/main/main-img-section.css');
+@import url('/blocks/main/pages-btns.css');
+@import url('/blocks/main/hero-section.css');
+@import url('/blocks/main/gallery.css');
+@import url('/blocks/main/buy.css');
+@import url('/blocks/main/future-section.css');
+@import url('/blocks/main/models.css');
+@import url('/blocks/main/reviews.css');
+
+@import url('/blocks/footer/footer-gallery.css');
+@import url('/blocks/footer/brochure.css');
+@import url('/blocks/footer/footer-elements.css');
+@import url('/blocks/footer/top-btn.css');

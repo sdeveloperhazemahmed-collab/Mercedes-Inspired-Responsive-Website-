@@ -1,0 +1,34 @@
+footer #top-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: center;
+    width: 65px;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+}
+
+footer #top-btn svg {
+    width: 50%;
+    max-height: 35px;
+    fill: white;
+    margin-top: 6px;
+}
+
+footer #top-btn:hover svg {
+    animation: shaking 1s infinite;
+
+    &:active {
+        animation: run 1s forwards;
+    }
+}
+
+@keyframes shaking {
+    25% {transform: rotate(10deg);}
+    75% {transform: rotate(-10deg);}
+}
+
+@keyframes run {
+    25% {transform: translateY(-2px);}
+    75% {transform: translateY(4px);}
+}
